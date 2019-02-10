@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bets</title>
+</head>
+<body>
+    <div class="ui container">
+        <div class="ui secondary menu" style="padding:2px; border-bottom:2px solid #d9d9d9">
+            <a class="item">
+            Hjem
+            </a>
+            <a class="item">
+                    Dagens tip
+            </a>
+            <a class="item active">
+            Tips
+            </a>
+            <a class="item">
+            Dagens kampe
+            </a>
+            <div class="right menu">
+            <a class="ui item">
+            Log in
+            </a>
+            <a class="ui item">
+            Registrer
+            </a>
+            </div>
+        </div>
+        
+        <div class="ui container">
+                {% block content %}
+                {% endblock %}
+                    <div class="ui two column grid">
+                       
+                <div class="column">
+                    <div class="ui raised segment">
+                        <a class="ui green ribbon label">Fobold</a>
+                        <span><b>Kommende kampe</b></span>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui raised segment">
+                        <a class="ui orange ribbon label">Håndbold</a>
+                        <span>Kommende kampe</span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
